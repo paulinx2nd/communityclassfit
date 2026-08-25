@@ -1,0 +1,166 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "answer_offer": {
+      "params": [
+        [
+          "journey_id",
+          "string"
+        ],
+        [
+          "accept",
+          "bool"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "cancel_journey": {
+      "params": [
+        [
+          "journey_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_journey": {
+      "params": [
+        [
+          "journey_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_journey_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_journey_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_pathway": {
+      "params": [
+        [
+          "pathway_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_pathway_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_pathway_id": {
+      "params": [
+        [
+          "index",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "map_mastery": {
+      "params": [
+        [
+          "journey_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "offer_class": {
+      "params": [
+        [
+          "journey_id",
+          "string"
+        ],
+        [
+          "node_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "open_journey": {
+      "params": [
+        [
+          "pathway_id",
+          "string"
+        ],
+        [
+          "journey_key",
+          "string"
+        ],
+        [
+          "evidence_text",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "publish_pathway": {
+      "params": [
+        [
+          "pathway_key",
+          "string"
+        ],
+        [
+          "title",
+          "string"
+        ],
+        [
+          "graph",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}
